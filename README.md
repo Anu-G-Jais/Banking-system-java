@@ -33,12 +33,15 @@ Welcome to the Banking App, a simple yet powerful Java application for managing 
 3. Execute the SQL script in `database.sql` to create the necessary tables (`User` and `Accounts`).
 
  -- Step 1: Create the BankDB database
+ 
 CREATE DATABASE IF NOT EXISTS BankDB;
 
 -- Step 2: Use the BankDB database
+
 USE BankDB;
 
 -- Step 3: Create the "account" table with modified column name
+
 CREATE TABLE IF NOT EXISTS account (
     account_number BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     full_name VARCHAR(200) NOT NULL,
@@ -48,6 +51,7 @@ CREATE TABLE IF NOT EXISTS account (
 );
 
 -- Step 4: Create the "user" table
+
 CREATE TABLE IF NOT EXISTS user (
     full_name VARCHAR(200),
     email VARCHAR(200) PRIMARY KEY,
